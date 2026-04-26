@@ -20,8 +20,8 @@ jobs:
 
       - name: Configure git
         run: |
-          git config --global user.email "alternatingcurrentgaming@gmail.com"
-          git config --global user.name "Commit Bot"
+          git config --global user.email "qfedericoba@gmail.com"
+          git config --global user.name "FedericoQuinones"
 
       - name: Run commit bot
         run: python scripts/commit_bot.py

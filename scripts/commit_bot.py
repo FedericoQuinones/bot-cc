@@ -66,6 +66,10 @@ def make_commits():
             time.sleep(random.uniform(0, 3))
 
 def main():
+    # Configure git user
+    subprocess.run(["git", "config", "user.email", "qfedericoba@gmail.com"], check=True)
+    subprocess.run(["git", "config", "user.name", "FedericoQuinones"], check=True)
+
     # Check if we should skip today
     if skip_day():
         print("Skipping today (random decision)")
