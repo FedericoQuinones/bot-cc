@@ -70,11 +70,6 @@ def main():
     subprocess.run(["git", "config", "user.email", "qfedericoba@gmail.com"], check=True)
     subprocess.run(["git", "config", "user.name", "FedericoQuinones"], check=True)
 
-    # Check if we should skip today
-    if skip_day():
-        print("Skipping today (random decision)")
-        return
-
     try:
         make_commits()
         print(f"✓ Made commits successfully")
